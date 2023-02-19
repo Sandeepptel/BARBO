@@ -1,0 +1,4 @@
+select barbers.name,barbers.contact,barbers.address,barbers.salon_id,barbers.email,barbers.start_time,barbers.total_seat,barbers.password,barbers.starting_year,barbers.end_time,cites.name,states.state from barbers inner join cites,states where (barbers.city_id=cites.city_id) && (cites.state_id=states.state_id) && barbers.barber_id=51;
+
+
+select barber_service_id,barber_id,name from barbers_services inner join services where (barbers_services.service_id = services.service_id) && (barber_id=57);
